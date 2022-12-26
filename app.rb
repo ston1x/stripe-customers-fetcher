@@ -32,9 +32,9 @@ class App
   private
 
   def prepare_csv
-    return if File.exist?(@output_file_name)
+    return if File.exist?(@output_file_name) && CSV.open(@output_file_name, headers: true).read.headers.any?
 
-    CSV.open('customers.csv', 'w') do |csv|
+    CSV.open(@output_file_name, 'w') do |csv|
       csv << %w[ID Name Email]
     end
   end
