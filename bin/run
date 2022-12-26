@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+require_relative '../app'
+require 'pry'
+
+# Provide custom file path if given
+ARGV.any? ? App.new(ARGV.first).call : App.new.call
