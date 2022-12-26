@@ -5,10 +5,10 @@ This Ruby program is intended to fetch customers via Stripe API and store them i
 ## Features
 - Downloads and saves customers to a CSV file given a Stripe API key
 - If the program is killed or interrupted at some point, it will continue from last written customer on the next launch
--
 
 ## Usage
 - It is recommended to have at least ruby 3.1.2
+- Run $ `git clone https://github.com/ston1x/stripe-customers-fetcher.git`
 - Run $ `bundle`
 - Run $ `bin/run`
   - NOTE: You can optionally provide custom output file path: $ `bin/run my_output_file.csv`
