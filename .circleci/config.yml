@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/stripe-customers-fetcher
     docker:
-      - image: circleci/ruby:3.1.2
+      - image: cimg/ruby:3.1.2
         environment:
           BUNDLER_VERSION: 2.3.3
     steps:
