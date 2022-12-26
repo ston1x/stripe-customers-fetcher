@@ -27,9 +27,9 @@ RSpec.describe App do
 
       it 'appends more customers to the file' do
         expect { subject }.to change \
-          { CSV.open(output_temp_file.path, headers: true).read.count }.
-          from(amount_of_customers_during_interruption).
-          to(amount_of_customers_in_total)
+          { CSV.open(output_temp_file.path, headers: true).read.count }
+          .from(amount_of_customers_during_interruption)
+          .to(amount_of_customers_in_total)
       end
     end
   end

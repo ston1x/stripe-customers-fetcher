@@ -3,6 +3,7 @@ require 'pry'
 require 'csv'
 require 'stripe'
 
+# This class allows fetching customers from Stripe API and storing them in an output CSV file.
 class App
   Stripe.log_level = Stripe::LEVEL_INFO
   Stripe.api_key   = ENV.fetch('STRIPE_API_KEY')
